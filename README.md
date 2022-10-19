@@ -27,3 +27,11 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 A couple VSCode extensions were added for prettier to work with .ts\* files
 
 CTRL+P / CMD+P -> ext install esbenp.prettier-vscode
+
+## Prisma
+
+Prisma and PostgreSQL were added using heroku free resources
+
+```bash
+npx prisma studio
+```

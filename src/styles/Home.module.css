@@ -1,0 +1,10 @@
+.content {
+	position: relative;
+	height: 20vh;
+	text-align: center;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}

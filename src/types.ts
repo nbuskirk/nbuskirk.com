@@ -1,7 +1,7 @@
-export interface IPokemonProps {
-	pokemon: [{ name: string; url: string }][];
-}
-[];
-export type PokemonListItemProps = {
-	pokemon: { name: string; url: string };
+import { MenuItem } from '@prisma/client';
+
+export type MenuWithItems = {
+	id: string;
+	name: string;
+	menuItems: MenuItem[];
 };

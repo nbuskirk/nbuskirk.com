@@ -35,7 +35,7 @@ interface HomePageProps {
 
 const Home: NextPage<HomePageProps> = ({ projects, menu }) => {
 	return (
-		<div className='h-screen bg-black relative'>
+		<div className='h-screen bg-black relative flex items-center justify-center'>
 			<Head>
 				<title>nbuskirk.com - dev stuff by Nathan Buskirk</title>
 				<meta

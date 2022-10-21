@@ -6,3 +6,6 @@ menu li p {
 	font-size: 18px;
 	line-height: 28px;
 }
+menu li {
+	padding: 5px;
+}

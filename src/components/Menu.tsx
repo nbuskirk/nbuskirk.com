@@ -37,7 +37,7 @@ const Menu = ({ menu }: { menu: MenuWithItems }): ReactElement => {
 				ref={menuRef}
 				style={{
 					transition: 'transform 0.5s linear',
-					transform: `translateY(${activeItem * 28 + 'px'} )`,
+					transform: `translateY(${activeItem * 38 + 'px'} )`,
 				}}
 				className='relative z-20 flex flex-col'
 			>
@@ -57,7 +57,7 @@ const Menu = ({ menu }: { menu: MenuWithItems }): ReactElement => {
 					<p>Social</p>
 				</li>
 			</menu>
-			<menu className='absolute top-[56px] w-full bg-slate-600/75 z-10 rounded'>
+			<menu className='absolute top-[76px] w-full bg-slate-600/75 z-10 rounded'>
 				<li className='selector'>
 					<p>{'\u00A0'}</p>
 				</li>

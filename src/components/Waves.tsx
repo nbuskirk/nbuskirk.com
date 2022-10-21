@@ -2,8 +2,7 @@ import styles from '../styles/Waves.module.css';
 
 const Waves = () => {
 	return (
-		<div className={styles.header}>
-			<div className={styles.innerHeader}></div>
+		<div className='h-screen w-screen flex items-center justify-center text-center'>
 			<svg
 				className={styles.waves}
 				xmlns='http://www.w3.org/2000/svg'
@@ -19,25 +18,10 @@ const Waves = () => {
 					/>
 				</defs>
 				<g className={styles.parallax}>
-					<use
-						xlinkHref='#gentle-wave'
-						x='48'
-						y='0'
-						fill='rgba(138,138,255,0.7'
-					/>
-					<use
-						xlinkHref='#gentle-wave'
-						x='48'
-						y='3'
-						fill='rgba(138,138,255,0.5)'
-					/>
-					<use
-						xlinkHref='#gentle-wave'
-						x='48'
-						y='5'
-						fill='rgba(138,138,255,0.3)'
-					/>
-					<use xlinkHref='#gentle-wave' x='48' y='7' fill='#000' />
+					<use href='#gentle-wave' x='48' y='0' fill='rgba(138,138,255,0.7' />
+					<use href='#gentle-wave' x='48' y='3' fill='rgba(138,138,255,0.5)' />
+					<use href='#gentle-wave' x='48' y='5' fill='rgba(138,138,255,0.3)' />
+					<use href='#gentle-wave' x='48' y='7' fill='#000' />
 				</g>
 			</svg>
 		</div>

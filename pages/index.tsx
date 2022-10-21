@@ -10,7 +10,7 @@ import { MenuWithItems } from 'src/types';
 import Head from 'next/head';
 import Waves from '@components/Waves';
 import NavBar from '@components/Navbar';
-import Dashboard from '@components/Dashboard';
+import Menu from '@components/Menu';
 
 export const getStaticProps: GetStaticProps = async () => {
 	const projects = await prisma.project.findMany();
@@ -35,7 +35,7 @@ interface HomePageProps {
 
 const Home: NextPage<HomePageProps> = ({ projects, menu }) => {
 	return (
-		<div style={{ height: '100vh', background: 'black', position: 'relative' }}>
+		<div className='h-screen bg-black relative'>
 			<Head>
 				<title>nbuskirk.com - dev stuff by Nathan Buskirk</title>
 				<meta
@@ -50,7 +50,7 @@ const Home: NextPage<HomePageProps> = ({ projects, menu }) => {
 			</Head>
 			<NavBar />
 			<Waves />
-			<Dashboard menu={menu} />
+			<Menu menu={menu} />
 		</div>
 	);
 };

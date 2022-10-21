@@ -32,38 +32,33 @@ const Menu = ({ menu }: { menu: MenuWithItems }): ReactElement => {
 	});
 
 	return (
-		<div className='text-white absolute top-1/2vh overflow-hidden '>
+		<div className='text-white absolute top-1/2vh overflow-hidden'>
 			<menu
 				ref={menuRef}
 				style={{
 					transition: 'transform 0.5s linear',
-					transform: `translateY(${activeItem * 72 + 'px'} )`,
+					transform: `translateY(${activeItem * 28 + 'px'} )`,
 				}}
-				className='relative z-20'
+				className='relative z-20 flex flex-col'
 			>
-				<li className='p-5 flex '>
-					<FolderPlusIcon className='w-5 mr-5' />
+				<li className='flex items-center'>
 					<p>Portfolio</p>
 				</li>
-				<li className='p-5 flex'>
-					<TvIcon className='w-5 mr-5' />
+				<li className=' flex items-center'>
 					<p>Demos</p>
 				</li>
-				<li className='p-5 relative flex'>
-					<BeakerIcon className='w-5 mr-5' />
+				<li className=' relative flex items-center'>
 					<p>Projects</p>
 				</li>
-				<li className='p-5 flex'>
-					<EnvelopeIcon className='w-5 mr-5' />
+				<li className='flex items-center'>
 					<p>Contact</p>
 				</li>
-				<li className='p-5 flex'>
-					<ChatBubbleLeftRightIcon className='w-5 mr-5' />
+				<li className='flex items-center'>
 					<p>Social</p>
 				</li>
 			</menu>
-			<menu className='absolute top-[144px] w-full bg-slate-600/75 z-10 rounded '>
-				<li className='selector p-5 '>
+			<menu className='absolute top-[56px] w-full bg-slate-600/75 z-10 rounded'>
+				<li className='selector'>
 					<p>{'\u00A0'}</p>
 				</li>
 			</menu>

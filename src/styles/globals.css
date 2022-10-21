@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+menu li p {
+	font-size: 18px;
+	line-height: 28px;
+}
